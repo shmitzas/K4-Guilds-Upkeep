@@ -1,0 +1,180 @@
+{
+  // General
+  "k4.general.prefix": "[silver][ [lime]Guilds [silver]]",
+
+  // Rank names (used in config default ranks)
+  "k4.rank.leader": "Leader",
+  "k4.rank.officer": "Officer",
+  "k4.rank.member": "Member",
+
+  // Command errors
+  "k4.command.error.no_permission": "[lightred]You don't have permission to use this command.",
+  "k4.command.error.player_not_found": "[lightred]Player not found.",
+  "k4.command.error.multiple_matches": "[lightred]Multiple players found. Be more specific.",
+  "k4.command.error.member_not_found": "[lightred]Member not found in guild.",
+  "k4.command.error.invalid_upgrade": "[lightred]Invalid upgrade type. Use: slots, bank, xp, interest",
+
+  // Command usage
+  "k4.command.usage.create": "[silver]Usage: [lime]!guild create <name>",
+  "k4.command.usage.invite": "[silver]Usage: [lime]!guild invite <player>",
+  "k4.command.usage.kick": "[silver]Usage: [lime]!guild kick <player>",
+  "k4.command.usage.promote": "[silver]Usage: [lime]!guild promote <player>",
+  "k4.command.usage.demote": "[silver]Usage: [lime]!guild demote <player>",
+  "k4.command.usage.deposit": "[silver]Usage: [lime]!guild deposit <amount>",
+  "k4.command.usage.withdraw": "[silver]Usage: [lime]!guild withdraw <amount>",
+  "k4.command.usage.upgrade": "[silver]Usage: [lime]!guild upgrade <slots|bank|xp|interest>",
+  "k4.command.usage.rename": "[silver]Usage: [lime]!guild rename <new name>",
+  "k4.command.usage.gc": "[silver]Usage: [lime]!gc <message>",
+  "k4.command.usage.perk_buy": "[silver]Usage: [lime]!guild perks buy <perk_id>",
+  "k4.command.usage.perk_toggle": "[silver]Usage: [lime]!guild perks toggle <perk_id>",
+  "k4.command.usage.perk_info": "[silver]Usage: [lime]!guild perks info <perk_id>",
+
+  // Help command (multi-line)
+  "k4.command.help.header": "[lime]=== Guild Commands",
+  "k4.command.help.create": "[grey]> [olive]!guild create <name> <tag>[silver] - Create a new guild",
+  "k4.command.help.info": "[grey]> [olive]!guild info[silver] - View guild information",
+  "k4.command.help.members": "[grey]> [olive]!guild members[silver] - List guild members",
+  "k4.command.help.invite": "[grey]> [olive]!guild invite <player>[silver] - Invite a player",
+  "k4.command.help.accept": "[grey]> [olive]!guild accept[silver] - Accept guild invite",
+  "k4.command.help.decline": "[grey]> [olive]!guild decline[silver] - Decline guild invite",
+  "k4.command.help.leave": "[grey]> [olive]!guild leave[silver] - Leave your guild",
+  "k4.command.help.kick": "[grey]> [olive]!guild kick <player>[silver] - Kick a member",
+  "k4.command.help.promote": "[grey]> [olive]!guild promote <player>[silver] - Promote a member",
+  "k4.command.help.demote": "[grey]> [olive]!guild demote <player>[silver] - Demote a member",
+  "k4.command.help.deposit": "[grey]> [olive]!guild deposit <amount>[silver] - Deposit to guild bank",
+  "k4.command.help.withdraw": "[grey]> [olive]!guild withdraw <amount>[silver] - Withdraw from bank",
+  "k4.command.help.upgrade": "[grey]> [olive]!guild upgrade [type][silver] - View/purchase upgrades",
+  "k4.command.help.chat": "[grey]> [olive]!gc <message>[silver] - Guild chat",
+  "k4.command.help.perks": "[grey]> [olive]!guild perks[silver] - View and manage perks",
+  "k4.command.help.rename": "[grey]> [olive]!guild rename <name>[silver] - Rename your guild",
+  "k4.command.help.disband": "[grey]> [olive]!guild disband[silver] - Disband your guild",
+  "k4.command.help.top": "[grey]> [olive]!guild top [count][silver] - Top guilds by kills",
+  "k4.command.help.footer": "[lime]===",
+
+  // Info command (multi-line)
+  "k4.command.info.header": "[lime]=== {0} [{1}]",
+  "k4.command.info.members": "[grey]> [silver]Members: [lime]{0}[silver]/[lime]{1}",
+  "k4.command.info.bank": "[grey]> [silver]Bank: [lime]{0}[silver]/[lime]{1}",
+  "k4.command.info.xpboost": "[grey]> [silver]XP Boost: [lime]+{0}%",
+  "k4.command.info.footer": "[lime]===",
+
+  // Members command
+  "k4.command.members.header": "[lime]=== Guild Members",
+  "k4.command.members.item": "[grey]> [silver]{0} [grey]({1})",
+  "k4.command.members.footer": "[lime]===",
+
+  // Guild errors
+  "k4.guild.error.not_in_guild": "[lightred]You are not in a guild.",
+  "k4.guild.error.already_in_guild": "[lightred]You are already in a guild.",
+  "k4.guild.error.name_empty": "[lightred]Guild name cannot be empty.",
+  "k4.guild.error.name_whitespace": "[lightred]Guild name cannot have leading/trailing whitespace.",
+  "k4.guild.error.name_invalid_chars": "[lightred]Guild name contains invalid characters.",
+  "k4.guild.error.name_too_short": "[lightred]Guild name must be at least {0} characters.",
+  "k4.guild.error.name_too_long": "[lightred]Guild name cannot exceed {0} characters.",
+  "k4.guild.error.tag_empty": "[lightred]Guild tag cannot be empty.",
+  "k4.guild.error.tag_invalid_chars": "[lightred]Guild tag contains invalid characters.",
+  "k4.guild.error.tag_too_long": "[lightred]Guild tag cannot exceed {0} characters.",
+  "k4.guild.error.name_taken": "[lightred]A guild with this name already exists.",
+  "k4.guild.error.not_enough_currency": "[lightred]Not enough currency! Need [gold]{0}[lightred], have [gold]{1}[lightred].",
+  "k4.guild.error.not_leader": "[lightred]Only the guild leader can do this.",
+  "k4.guild.error.leader_cannot_leave": "[lightred]Leader cannot leave. Transfer leadership or disband.",
+  "k4.guild.error.no_permission_invite": "[lightred]You don't have permission to invite players.",
+  "k4.guild.error.no_permission_kick": "[lightred]You don't have permission to kick members.",
+  "k4.guild.error.no_permission_promote": "[lightred]You don't have permission to promote members.",
+  "k4.guild.error.no_permission_demote": "[lightred]You don't have permission to demote members.",
+  "k4.guild.error.no_permission_withdraw": "[lightred]You don't have permission to withdraw.",
+  "k4.guild.error.no_permission_upgrade": "[lightred]You don't have permission to purchase upgrades.",
+  "k4.guild.error.no_permission_chat": "[lightred]You don't have permission to use guild chat.",
+  "k4.guild.error.no_permission": "[lightred]You don't have permission to do this.",
+  "k4.guild.error.target_in_guild": "[lightred]That player is already in a guild.",
+  "k4.guild.error.target_has_invite": "[lightred]That player already has a pending invite.",
+  "k4.guild.error.target_not_in_guild": "[lightred]That player is not in your guild.",
+  "k4.guild.error.target_higher_rank": "[lightred]You cannot manage someone of equal or higher rank.",
+  "k4.guild.error.target_guild_full": "[lightred]The guild is full.",
+  "k4.guild.error.guild_full": "[lightred]Your guild is full.",
+  "k4.guild.error.no_pending_invite": "[lightred]You don't have a pending invite.",
+  "k4.guild.error.guild_not_exists": "[lightred]The guild no longer exists.",
+  "k4.guild.error.no_default_rank": "[lightred]Guild has no default rank configured.",
+  "k4.guild.error.invalid_rank": "[lightred]Invalid rank.",
+  "k4.guild.error.no_higher_rank": "[lightred]There is no higher rank available.",
+  "k4.guild.error.no_lower_rank": "[lightred]There is no lower rank available.",
+  "k4.guild.error.cannot_kick_leader": "[lightred]You cannot kick the guild leader.",
+  "k4.guild.error.service_unavailable": "[lightred]Service temporarily unavailable.",
+  "k4.guild.error.no_perks": "[lightred]No perks are available.",
+  "k4.guild.error.perk_not_found": "[lightred]Perk '{0}' not found.",
+  "k4.guild.error.perk_not_toggleable": "[lightred]This perk cannot be toggled.",
+  "k4.guild.error.perk_not_purchased": "[lightred]This perk has not been purchased yet.",
+  "k4.guild.error.perk_already_purchased": "[lightred]This perk has already been purchased.",
+  "k4.guild.error.perk_max_level": "[lightred]This perk is already at maximum level.",
+  "k4.guild.error.perk_toggle_failed": "[lightred]Failed to toggle perk.",
+
+  // Guild success
+  "k4.guild.success.created": "[lime]Guild '[gold]{0}[lime]' created successfully!",
+  "k4.guild.success.disbanded": "[lime]Guild has been disbanded.",
+  "k4.guild.success.renamed": "[lime]Guild renamed from '[gold]{0}[lime]' to '[gold]{1}[lime]'.",
+  "k4.guild.success.invite_sent": "[lime]Invite sent to [gold]{0}[lime].",
+  "k4.guild.success.joined": "[lime]You joined '[gold]{0}[lime]'!",
+  "k4.guild.success.invite_declined": "[silver]Invite declined.",
+  "k4.guild.success.left": "[silver]You left '[gold]{0}[silver]'.",
+  "k4.guild.success.kicked": "[lime]{0} has been kicked from the guild.",
+  "k4.guild.success.promoted": "[lime]{0} promoted to [gold]{1}[lime].",
+  "k4.guild.success.demoted": "[silver]{0} demoted to [gold]{1}[silver].",
+  "k4.guild.success.perk_purchased": "[lime]Perk '[gold]{0}[lime]' purchased! Level: [gold]{1}",
+  "k4.guild.success.perk_upgraded": "[lime]Perk '[gold]{0}[lime]' upgraded to level [gold]{1}[lime]!",
+  "k4.guild.success.perk_enabled": "[lime]Perk '[gold]{0}[lime]' enabled.",
+  "k4.guild.success.perk_disabled": "[silver]Perk '[gold]{0}[silver]' disabled.",
+
+  // Upgrades command (multi-line)
+  "k4.command.upgrades.header": "[lime]=== Guild Upgrades",
+  "k4.command.upgrades.item": "[grey]> [silver]{0} [grey]({1})[silver] - Lv.[lime]{2}[silver]/[lime]{3} [grey]- Next: [gold]{4}",
+  "k4.command.upgrades.item_maxed": "[grey]> [gold]{0} [grey]({1})[silver] - Lv.[lime]{2} [yellow]MAX",
+  "k4.command.upgrades.usage_hint": "[grey]> [grey]Use !guild upgrade <slots|bank|xp|interest>",
+  "k4.command.upgrades.footer": "[lime]===",
+
+  // Upgrade errors/success
+  "k4.upgrade.error.disabled": "[lightred]This upgrade is disabled.",
+  "k4.upgrade.error.max_level": "[lightred]This upgrade is already at maximum level.",
+  "k4.upgrade.error.insufficient_funds": "[lightred]Insufficient guild bank funds! Need [gold]{0}[lightred], have [gold]{1}[lightred].",
+  "k4.upgrade.success.purchased": "[lime]{0} upgraded to level [gold]{1}[lime]!",
+
+  // Bank errors/success
+  "k4.bank.error.invalid_amount": "[lightred]Amount must be greater than 0.",
+  "k4.bank.error.insufficient_balance": "[lightred]Insufficient balance! You have [gold]{0}[lightred].",
+  "k4.bank.error.insufficient_bank": "[lightred]Insufficient guild bank funds! Bank has [gold]{0}[lightred].",
+  "k4.bank.error.exceed_capacity": "[lightred]Would exceed bank capacity ([gold]{0}[lightred]). Current balance: [gold]{1}[lightred].",
+  "k4.bank.success.deposited": "[lime]Deposited [gold]{0}[lime] to guild bank.",
+  "k4.bank.success.withdrawn": "[lime]Withdrew [gold]{0}[lime] from guild bank.",
+
+  // Economy
+  "k4.economy.error.unavailable": "[lightred]Economy system is not available.",
+
+  // Perks
+  "k4.guild.perks.header": "[lime]=== Guild Perks",
+  "k4.guild.perks.item_not_purchased": "[grey]> [grey]{0}[silver] {1} ({2}) - Cost: [gold]{3}",
+  "k4.guild.perks.item_purchasable": "[grey]> [lime]{0}[silver] {1} ({2}) - {3}",
+  "k4.guild.perks.item_upgradeable": "[grey]> [lime]{0}[silver] {1} ({2}) - Lv.{3}/{4} - Next: [gold]{5}",
+  "k4.guild.perks.item_maxed": "[grey]> [gold]{0}[silver] {1} ({2}) - Lv.{3} [yellow]MAX",
+  "k4.guild.perks.status_on": "[lime]ON",
+  "k4.guild.perks.status_off": "[red]OFF",
+  "k4.guild.perks.usage_hint": "[grey]> [grey]Use !guild perks buy/toggle/info <perk_id>",
+  "k4.guild.perks.info.header": "[lime]=== {0} [grey]({1})",
+  "k4.guild.perks.info.description": "[grey]> [silver]{0}",
+  "k4.guild.perks.info.status": "[grey]> [silver]Status: {0}",
+  "k4.guild.perks.info.cost": "[grey]> [silver]Cost: [gold]{0}",
+  "k4.guild.perks.info.level": "[grey]> [silver]Level: [lime]{0}[silver]/[lime]{1}",
+  "k4.guild.perks.info.next_cost": "[grey]> [silver]Next upgrade: [gold]{0}",
+
+  // Chat/Invite notifications
+  "k4.chat.format": "[grey][[lime]{0}[grey]] [silver]{1}[grey]: [white]{2}",
+  "k4.chat.invite_received": "[silver]You have been invited to join a guild by [lime]{0}[silver]!",
+  "k4.chat.invite_usage": "[silver]Type [lime]!guild accept[silver] to join or [lime]!guild decline[silver] to reject.",
+
+  // Top guilds
+  "k4.command.top.header": "[lime]=== Top Guilds by Kills",
+  "k4.command.top.item": "[grey]> [gold]#{0} [silver]{1} [grey][{2}][silver] - K: [lime]{3} [silver]D: [lime]{4} [silver]HS: [lime]{5} [silver]A: [lime]{6}",
+  "k4.command.top.no_stats": "[silver]No guild stats have been recorded yet.",
+  "k4.command.top.footer": "[lime]===",
+
+  // Clan name tag display
+  "k4.clan.tag_format.scoreboard": "[{0}]"
+}
