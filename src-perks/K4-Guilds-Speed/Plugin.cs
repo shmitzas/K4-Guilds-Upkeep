@@ -69,7 +69,7 @@ public sealed class Plugin(ISwiftlyCore core) : BasePlugin(core)
 		if (_guildsApi == null) return HookResult.Continue;
 
 		var player = ev.UserIdPlayer;
-		if (!player.IsValid) return HookResult.Continue;
+		if (player is null || !player.IsValid) return HookResult.Continue;
 
 		var perkId = _config.PerkId;
 		var speedBonus = _config.SpeedBonusPerLevel;
