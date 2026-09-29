@@ -28,7 +28,9 @@
     </Reference>
   </ItemGroup>
 
+  <!-- Publishes to build/publish/K4-Guilds-Health/ (drop straight into the plugins
+       folder) and zips the parent so the archive root holds that same folder. -->
   <Target Name="CreateZip" AfterTargets="Publish">
-    <ZipDirectory SourceDirectory="$(PublishDir)" DestinationFile="$(OutputPath)../$(AssemblyName).zip" Overwrite="true" />
+    <ZipDirectory SourceDirectory="$(PublishDir)../" DestinationFile="$(OutputPath)../$(AssemblyName).zip" Overwrite="true" />
   </Target>
 </Project>
