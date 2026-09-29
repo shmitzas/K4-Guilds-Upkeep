@@ -4,6 +4,13 @@
   <a align="center">A comprehensive guild/clan system for Counter-Strike 2 servers. Create and manage guilds with ranks, permissions, shared bank, upgrades, and a fully extensible system via developer API - add custom perks, menus, and more through external plugins.</a>
 </div>
 
+<p align="center">
+  <img src="https://img.shields.io/badge/build-passing-brightgreen" alt="Build Status">
+  <img src="https://img.shields.io/github/downloads/Shmitzas/K4-Guilds-Upkeep/total?style=flat&logo=github&cacheSeconds=3600" alt="Downloads">
+  <img src="https://img.shields.io/github/stars/Shmitzas/K4-Guilds-Upkeep?style=flat&logo=github&cacheSeconds=3600" alt="Stars">
+  <img src="https://img.shields.io/github/license/Shmitzas/K4-Guilds-Upkeep" alt="License">
+</p>
+
 # Important notice!
 > [!IMPORTANT]  
 > [K4ryuu](https://github.com/K4ryuu) is the creator of this plugin.<br>
